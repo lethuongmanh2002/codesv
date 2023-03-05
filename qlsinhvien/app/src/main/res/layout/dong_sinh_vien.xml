@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvmasv"
+        android:layout_width="93dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Mã sv"
+        android:textColor="#f00"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvtensv"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvmasv"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="-51dp"
+        android:layout_toRightOf="@id/tvmasv"
+        android:padding="10dp"
+        android:text="Tên"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvngaysinh"
+        android:layout_width="149dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/tvtensv"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="-49dp"
+        android:layout_toRightOf="@id/tvtensv"
+        android:text="Ngày sinh"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvsodt"
+        android:layout_width="137dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/tvtensv"
+        android:layout_marginLeft="-80dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@id/tvmasv"
+        android:text="Số Đt"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvdiachi"
+        android:layout_width="236dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/tvtensv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/tvsodt"
+        android:padding="5dp"
+        android:text="địa chỉ"
+        android:textSize="22sp" />
+
+
+</RelativeLayout>

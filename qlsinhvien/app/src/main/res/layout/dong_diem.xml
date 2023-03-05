@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvmasv"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Mã sv"
+        android:textColor="#f00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvdiemtoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvmasv"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="-51dp"
+        android:layout_toRightOf="@id/tvmasv"
+        android:padding="10dp"
+        android:text="Điểm toán"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvdiemhoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvdiemtoan"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="-51dp"
+        android:layout_toRightOf="@id/tvdiemtoan"
+        android:padding="10dp"
+        android:text="Điểm hóa"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvdiemly"
+        android:layout_width="137dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/tvdiemtoan"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@id/tvmasv"
+        android:text=" Điểm lý"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvtbc"
+        android:layout_width="137dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/tvdiemly"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="-58dp"
+        android:layout_toRightOf="@id/tvmasv"
+        android:text=" TBC "
+        android:textSize="22sp"
+        android:textStyle="bold" />
+</RelativeLayout>

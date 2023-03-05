@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_intro"
+    android:layout_gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="181dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gv" />
+
+    <Button
+        android:id="@+id/btnsinhvien"
+        android:layout_width="150dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="76dp"
+        android:drawableLeft="@drawable/profile"
+        android:text="sinh viên"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btngiangvien"
+        android:layout_width="148dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="172dp"
+        android:drawableLeft="@drawable/profile"
+        android:text="Giảng viên"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btndiem"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="76dp"
+        android:drawableLeft="@drawable/btn1"
+        android:text="Điểm"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="256dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="52dp"
+        android:text="Quản Lý Sinh Viên"
+        android:textColor="#CDDC39"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnthoat"
+        android:layout_width="121dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="16dp"
+        android:background="#CDDC39"
+        android:drawableLeft="@drawable/back"
+        android:text="Thoát"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btndiem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

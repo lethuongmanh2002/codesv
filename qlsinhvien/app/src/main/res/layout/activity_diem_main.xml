@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diemMain">
+
+    <EditText
+        android:id="@+id/editdiemly"
+        android:layout_width="249dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="208dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:hint="Điểm lý"
+        app:layout_constraintStart_toEndOf="@+id/tv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editdiemhoa"
+        android:layout_width="249dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:hint="Điểm hóa"
+        app:layout_constraintStart_toEndOf="@+id/tv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="103dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="200dp"
+        android:padding="10dp"
+        android:text="Điểm lý"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editdiemmasv"
+        android:layout_width="249dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:hint="Mã sv"
+        app:layout_constraintStart_toEndOf="@+id/tv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editdiemtoan"
+        android:layout_width="249dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:hint="Điểm toán"
+        app:layout_constraintStart_toEndOf="@+id/tv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="103dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Mã sv"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="103dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:padding="10dp"
+        android:text="Điểm toán"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="103dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="140dp"
+        android:padding="10dp"
+        android:text="Điểm hóa"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnsuadiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="31dp"
+        android:text="Sửa"
+        app:layout_constraintStart_toEndOf="@+id/btnthemdiem"
+        app:layout_constraintTop_toBottomOf="@+id/editdiemly" />
+
+    <Button
+        android:id="@+id/btnthemdiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="36dp"
+        android:text="Thêm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+    <Button
+        android:id="@+id/btnbackd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="31dp"
+        android:text="back"
+        app:layout_constraintStart_toEndOf="@+id/btnsuadiem"
+        app:layout_constraintTop_toBottomOf="@+id/editdiemly" />
+
+    <ListView
+        android:id="@+id/lvdiem"
+        android:layout_width="407dp"
+        android:layout_height="342dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="53dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsuadiem" />
+
+    <Button
+        android:id="@+id/btntaomoidiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="5dp"
+        android:text="tạo mới"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsuadiem" />
+</androidx.constraintlayout.widget.ConstraintLayout>
